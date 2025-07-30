@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
-
+ 
 const prisma = new PrismaClient();
-
+ 
 // GET /api/movies – Fetch all movies
 export async function GET() {
   try {
@@ -16,19 +16,19 @@ export async function GET() {
     });
   }
 }
-
+ 
 // POST /api/movies – Add new movie
 export async function POST(request) {
   try {
     const body = await request.json();
     const { title, releaseYear, actors } = body;
-
+ 
     console.log('Incoming data:', { title, releaseYear, actors });
-
+ 
     if (!title || !releaseYear || isNaN(releaseYear)) {
       return new Response(JSON.stringify({ error: 'Invalid data' }), { status: 400 });
     }
-
+ 
     const movie = await prisma.movie.create({
       data: {
         title,
@@ -36,7 +36,7 @@ export async function POST(request) {
         actors,
       },
     });
-
+ 
     return new Response(JSON.stringify(movie), {
       headers: { 'Content-Type': 'application/json' },
     });
@@ -47,3 +47,5 @@ export async function POST(request) {
     });
   }
 }
+ 
+ 
