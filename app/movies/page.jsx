@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.js';
 
 import Link from 'next/link';
 
@@ -206,9 +207,10 @@ export default function MoviesPage() {
             ))}
           </ul>
         )}
+        
       </main>
 
-      gt
+      <Footer/>
     </div>
   );
 }
