@@ -40,3 +40,4 @@ export async function POST(request) {
     return new Response(JSON.stringify({ error: 'Server error' }), { status: 500 });
   }
 }
+

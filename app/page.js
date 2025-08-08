@@ -21,8 +21,8 @@
  * Date: July 30, 2025
  */
 'use client';
-import Navbar from '../components/Navbar.js';
-import Footer from '../components/Footer.js';
+import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
 import Link from 'next/link';
  
 export default function Home() {
