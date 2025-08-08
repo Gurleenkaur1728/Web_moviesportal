@@ -21,14 +21,12 @@
  * Date: July 30, 2025
  */
 'use client';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+
 import Link from 'next/link';
  
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
  
       <main className="flex-grow flex flex-col justify-center items-center text-center px-4">
         <h2 className="text-4xl font-bold mb-4">Welcome to IMR Movie Portal</h2>
@@ -43,7 +41,7 @@ export default function Home() {
         </Link>
       </main>
  
-      <Footer />
+      
     </div>
   );
 }

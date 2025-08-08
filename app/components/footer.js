@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white text-center p-4 mt-8">
       <p>&copy; 2025 Internet Movie Rentals (IMR). All rights reserved.</p>
@@ -6,3 +6,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer

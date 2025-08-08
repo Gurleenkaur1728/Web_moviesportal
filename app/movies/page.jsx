@@ -1,8 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 import Link from 'next/link';
 
@@ -123,7 +121,7 @@ export default function MoviesPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-800 flex flex-col">
-      <Navbar />
+      
 
       <main className="flex-grow max-w-4xl mx-auto px-6 py-10">
         <Link href="/">
@@ -210,7 +208,7 @@ export default function MoviesPage() {
         
       </main>
 
-      <Footer/>
+      
     </div>
   );
 }
